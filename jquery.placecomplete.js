@@ -162,6 +162,7 @@ Plugin.prototype.init = function() {
                         // Select2 needs a "text" and "id" property set
                         // for each autocomplete list item. "id" is
                         // already defined on the apr object
+                        apr["id"] = apr["place_id"];
                         apr["text"] = apr["description"];
                         return apr;
                     });
